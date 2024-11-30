@@ -14,8 +14,6 @@ def print_square(square, highlighted_positions):
         for col_idx, number in enumerate(row):
             if (row_idx, col_idx) in highlighted_positions:
                 # Число будет коричневым
-                #print(f"\033[38;2;139;69;19m{number:>3}\033[0m", end="\t")
-                 
                 print(f"\033[38;2;77;53;35m{number:>3}\033[0m", end="\t")
             else:
                 print(f"{number:>3}", end="\t")
